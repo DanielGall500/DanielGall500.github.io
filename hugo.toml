@@ -1,0 +1,78 @@
+baseURL = "https://www.dg-nlp.com"
+languageCode = "en-ie"
+title = "DG-NLP"
+theme = "hugo-digital-garden-theme"
+themesdir = "themes/"
+copyright = "Daniel Gallagher ©"
+
+
+[params]
+  name = "Daniel Gallagher"
+  description = "Natural Language Processing Specialist"
+  initials = "DG-NLP"
+  googleAnalytics = ""
+
+  [[params.social]]
+    name = "Twitter"
+    link = "https://github.com/DanielGall500/"
+    icon = "fab fa-twitter"
+
+  [[params.social]]
+    name = "Github"
+    link = "https://github.com/DanielGall500/"
+    icon = "fab fa-github"
+
+  [[params.social]]
+    name = "Medium" 
+    link = "#"
+    icon = "fab fa-medium-m"
+
+  [[params.social]]
+    name = "LinkedIn"
+    link = "#"
+    icon = "fab fa-linkedin-in"
+
+
+[menu]
+  [[menu.main]]
+    name = "Blog"
+    url = "/garden/"
+    weight = 1
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 2
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 3
+
+
+[taxonomies]
+  garden_tags = 'garden_tags'
+  project_tags = 'project_tags'
+  library_tags = 'library_tags'
+
+
+[markup]
+  defaultMarkdownHandler = 'goldmark'
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.goldmark.parser]
+    autoHeadingID = true
+    autoHeadingIDType = 'github'
+    wrapStandAloneImageWithinParagraph = true
+    [markup.goldmark.parser.attribute]
+      block = false
+      title = true
+  [markup.goldmark.extensions]
+    definitionList = true
+    footnote = true
+    linkify = true
+    strikethrough = true
+    table = true
+    taskList = true
+    typographer = true
+  [markup.highlight]
+    # Choose from https://xyproto.github.io/splash/docs/all.html
+    style = 'monokailight'
