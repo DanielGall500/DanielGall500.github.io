@@ -43,9 +43,13 @@ copyright = "Daniel Gallagher ©"
     url = "/projects/"
     weight = 2
   [[menu.main]]
+    name = "Freelancing"
+    url = "/freelancing/"
+    weight = 3
+  [[menu.main]]
     name = "About"
     url = "/about/"
-    weight = 3
+    weight = 4
 
 
 [taxonomies]
