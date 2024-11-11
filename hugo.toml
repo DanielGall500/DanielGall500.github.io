@@ -2,7 +2,7 @@ baseURL = "https://www.dg-nlp.com"
 languageCode = "en-ie"
 title = "DG-NLP"
 theme = "hugo-digital-garden-theme"
-themesdir = "themes/"
+themesdir = "theme/"
 copyright = "Daniel Gallagher ©"
 
 
