@@ -8,14 +8,9 @@ copyright = "Daniel Gallagher ©"
 
 [params]
   name = "Daniel Gallagher"
-  description = "Natural Language Processing Specialist"
+  description = "Natural Language Processing"
   initials = "DG-NLP"
   googleAnalytics = ""
-
-  [[params.social]]
-    name = "Twitter"
-    link = "https://github.com/DanielGall500/"
-    icon = "fab fa-twitter"
 
   [[params.social]]
     name = "Github"
@@ -23,19 +18,14 @@ copyright = "Daniel Gallagher ©"
     icon = "fab fa-github"
 
   [[params.social]]
-    name = "Medium" 
-    link = "#"
-    icon = "fab fa-medium-m"
-
-  [[params.social]]
     name = "LinkedIn"
-    link = "#"
+    link = "https://www.linkedin.com/in/daniel-gallagher-a520161a3/"
     icon = "fab fa-linkedin-in"
 
 
 [menu]
   [[menu.main]]
-    name = "Blog"
+    name = "Articles"
     url = "/garden/"
     weight = 1
   [[menu.main]]

@@ -1,9 +1,8 @@
 ---
-title: "NLP & Data Science Freelancing"
+title: "NLP & Data Science"
 summary: "Build Your Project With Personalised Freelance Services"
 layout: freelance
 ---
-# About
 I am an independent Freelancer in Natural Language Processing with experience in Python, R and Rust. I place a strong emphasis on communication and provide clients with regular updates and re-evaluations of how a given project is progressing. 
 A number of tasks which can be carried out are:
 * Semantic Analysis
@@ -33,27 +32,3 @@ You can contact me over on <a href="https://www.upwork.com/freelancers/~010674dc
 
 <br><br>
 
-# Testimonials
-See what others had to say about it...
-
-## Text Extraction and Processing in Python
-**Employer:** A  
-**Rating:** ⭐⭐⭐⭐⭐  
-**Review:**  
-> "Daniel is a skilled professional who clearly cares about 'getting it right'. I would recommend him to any interested party."
-
----
-
-## Engineer to Help Develop a Generative AI / GPT-3 Demo Prototype
-**Employer:** B  
-**Rating:** ⭐⭐⭐⭐⭐  
-**Review:**  
-> "Daniel is a fantastic communicator, is well thought out and does excellent work!"
-
----
-
-## Seeking Early & Mid Career Data Analytics Experts
-**Employer:** C  
-**Rating:** ⭐⭐⭐⭐⭐  
-**Review:**  
-> "Daniel is wonderful to work with. He is smart, reliable, and diligent. He is also very easy to communicate with."
