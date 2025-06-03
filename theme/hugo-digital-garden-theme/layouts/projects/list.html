@@ -24,13 +24,12 @@
 </div>
 -->
 
-<!-- Project Cards -->
 <div class="container">
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3" data-masonry='{"percentPosition": true }' data-filter="" id="blogposts">
-        {{ range .Pages.ByPublishDate.Reverse }}
+    <div class="row row-cols-1 g-4 mb-5">
+        {{ range ( where site.RegularPages "Section" "projects" | first 6 ) }}
         {{ partial "card_project.html" . }}
         {{ end }}
-     </div>
+    </div>
 </div>
 
 {{ end }}

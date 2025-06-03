@@ -3,9 +3,8 @@ title: "Dagbani Phonological Toolkit"
 date: 2021-08-01
 draft: false
 project_tags: ["Rust", "Phonology", "Dagbani"]
-status: "evergreen"
 weight: 2
-summary: "Preprocess and convert Dagbani phonological data into structured representations like consonant-vowel and moraic structures.<br>"
+summary: "Preprocess and convert Dagbani phonological data into structured representations like consonant-vowel and moraic structures."
 links:
     external_link:
         text: "Github"

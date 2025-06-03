@@ -3,8 +3,7 @@ title: "Voss Machine Translation API"
 date: 2021-07-01
 draft: false
 project_tags: ["Python", "Javascript", "SQLite","FastAPI", "Sacremoses", "GUnicorn", "Locust"]
-status: "growing"
-summary: "An API for handling Machine Translation Models.<br><br><br>"
+summary: "An API for handling Machine Translation Models."
 weight: 4
 ---
 

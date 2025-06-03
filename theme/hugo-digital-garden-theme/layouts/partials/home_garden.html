@@ -4,7 +4,13 @@
             <div class="row justify-content-between">
                 <div class="col-8">
                     <h5 class="card-title">{{ .Title }}</h5>
-                    <!-- <p class="card-text">{{ .Summary }}</p> -->
+                    <p class="card-text">{{ .Summary }}</p>
+                    <p class="card-date"> 
+                        {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
+                        {{ with .Date }}
+                            {{ .Format $dateFormat }} - 
+                        {{ end }}
+                    </p>
                 <div class="col align-self-start">
                 {{ with .Params.garden_tags }}
                 {{ range . }}
@@ -12,12 +18,6 @@
                 {{ end }}
                 {{ end }}
                 </div>
-                </div>
-                <div class="col-4 ">
-                    <p class="card-right">
-                        <span class="card-date">{{ .Lastmod.Format "Jan 2, 2006" }} </span>
-                        <br/>{{ partial "status.html" . }}
-                    </p>
                 </div>
             </div>
             <a href="{{ .Permalink }}" class="stretched-link"></a>

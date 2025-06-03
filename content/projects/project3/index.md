@@ -3,8 +3,7 @@ title: "Irish Syntax Parser"
 date: 2021-07-01
 draft: false
 project_tags: ["Python", "Syntax", "Irish"]
-status: "growing"
-summary: "Cyclically parse Irish into its complementiser clauses.<br><br><br>"
+summary: "Cyclically parse Irish into its complementiser clauses."
 weight: 3
 ---
 

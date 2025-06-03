@@ -2,10 +2,10 @@
 
 <!-- Title and summary -->
 <div class="container">
-    <div class="py-5 rounded-3">
+    <div class="py-5 rounded-3" style="justify-content: center;">
         <div class="container-fluid py-2">
             <h1 class="display-2 mb-4">{{ .Title }}</h1>
-            <p class="bio col-md-8 fs-4 serif">{{ .Summary }}</p>
+            <p class="bio row-md-8 fs-4 serif">{{ .Summary }}</p>
         </div>
     </div>
 </div>
@@ -44,13 +44,12 @@
 
 </div>
 
-<!-- Garden Post Cards -->
 <div class="container">
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4" id="blogposts">
-        {{ range .Pages.ByPublishDate.Reverse }}
-        {{ partial "card_garden.html" . }}
+    <div class="row row-cols-1 g-4 mb-5">
+        {{ range ( where site.RegularPages "Section" "garden" | first 6 ) }}
+        {{ partial "home_garden.html" . }}
         {{ end }}
-     </div>
+    </div>
 </div>
 
 {{ end }}
