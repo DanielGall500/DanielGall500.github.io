@@ -1,10 +1,22 @@
+<style>
+@keyframes yourfirstanimation {
+    0% {opacity: 0; color: var(--blue);}
+    100% {opacity: 1; color: black;}
+  }
+
+.animated-title {
+animation: yourfirstanimation 3s forwards;
+}
+
+</style>
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
         <a class="navbar-brand" href="{{ .Site.BaseURL }}">
             {{ if .Site.Params.Initials }}
-            <b style="font-weight: 800;">{{ .Site.Params.Initials }}</b>
+            <b class="animated-title" style="font-weight: 800;">{{ .Site.Params.Initials }}</b>
             {{ else }}
-            <b style="font-weight: 800;">{{ .Site.Params.Name }}</b>
+            <b class="animated-title" style="font-weight: 800;">{{ .Site.Params.Name }}</b>
             {{ end }}
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
