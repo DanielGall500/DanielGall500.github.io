@@ -6,13 +6,17 @@
 {{ end }}
 
 <div class='col {{ $.Scratch.Get "project_tags_list" }}'>
-    {{ if .Summary }} 
-        <h4 class="card-title">{{ .Title }}</h4>
-        <p class="card-text pb-3">{{ .Summary }}.</p>
-    {{ else }}
-        <h4 class="card-title pb-3">{{ .Title }}</h4>
-    {{ end }}
-        <a href="{{ .Permalink }}" class="stretched-link"></a>
+    <div class="card top-highlight">
+        <div class="card-body">
+            {{ if .Summary }} 
+            <h4 class="card-title">{{ .Title }}</h4>
+            <p class="card-text pb-3">{{ .Summary }}.</p>
+            {{ else }}
+            <h4 class="card-title pb-3">{{ .Title }}</h4>
+            {{ end }}
+            <a href="{{ .Permalink }}" class="stretched-link"></a>
+        </div>
+    </div>
     <br>
 </div>
 {{ .Scratch.Delete "project_tags_list" }}
