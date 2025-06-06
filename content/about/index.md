@@ -1,7 +1,11 @@
 ---
-title: "About Me"
-summary: "At the Intersection of Language and Computer Science."
+title: "Daniel Gallagher"
+summary: "Based in Leipzig, Germany."
 layout: about
 ---
 
-Hi! I'm Daniel - an independent freelancer from Dublin, Ireland. I focus on building NLP and Data Science products in Python, R, and Rust. My passions are language and computer science, and I find the intersection of the two to be very interesting. Inspired by the late Brett Becker and his computingcrossroads.org project, I have focused on developing my skills in this area and enjoy building NLP solutions. Currently I am undertaking a Computational Linguistics Research Internship under Professor Greg Kobele at the University of Leipzig focusing on building and optimising computational models of grammar using graph databases.
+Hi! I'm Daniel. I'm interested in Natural Language Processing, with a particular focus on mechanistic interpretability, language equality projects such as European Language Equality and the improvement of modern tools for minority / low-resource languages. 
+
+I am currently researching the internal representations of syntax (language structure) in transformer-based architectures at [University Leipzig](https://www.uni-leipzig.de/). I additionally enjoy learning more about optimisation, statistics, linear algebra, and investigative data analysis.
+
+I enjoy building software or tools for linguistic research, a typically under-invested area. I'm currently working to release the first version of [MG-Graph](https://github.com/DanielGall500/MG-Graph/), a tool for modelling grammars using graph databases.
