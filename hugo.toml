@@ -36,6 +36,10 @@ copyright = "Daniel Gallagher ©"
     name = "About"
     url = "/about/"
     weight = 3
+  [[menu.main]]
+    name = "Resume"
+    url = "/resume/"
+    weight = 4
 
 
 [taxonomies]

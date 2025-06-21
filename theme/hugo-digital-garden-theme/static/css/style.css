@@ -1,5 +1,5 @@
 :root {
-    --blue: #0ac8ac;
+    --blue: #13b29a;
     --lighter-blue: #addbec;
     --yellow: #FFB603;
     --red: #FF2F03;
@@ -291,7 +291,7 @@ a:hover {
   color: var(--blue);
   text-decoration-color: var(--blue);
 }
-.main-content h2, h3, h4 {
+.main-content h2, h3, h4, h5, h6 {
   font-family: var(--headings);
   font-weight: bold;
   color: var(--dark);
