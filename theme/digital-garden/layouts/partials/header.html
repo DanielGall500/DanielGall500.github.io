@@ -22,19 +22,18 @@ animation: yourfirstanimation 3s forwards;
                         <b class="animated-title" style="font-weight: 800;">{{ .Site.Params.Name }}</b>
                         {{ end }}
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <div class="navbar" id="navbarNavDropdown">
                         <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
                             {{ range .Site.Params.Social }}
                                 <li class="nav-item px-2 pt-1">
                                         <a class="footer-social px-2" {{ with .rel }} rel="{{ . }}" {{ end }} href="{{ .link }}" target="_blank"><i class="{{ .icon }}"></i></a>
                                 </li>
                             {{ end }}
+                            <!--
                             <li class="nav-item " style="margin: 0.15em;">
                                 <a class="btn fas fa-moon" id="dark-mode-toggle"></a>
                             </li>
+                            -->
                             {{- $currentPage := . -}}
                             {{ range .Site.Menus.main -}}
                                 <li class='nav-item {{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}'>
