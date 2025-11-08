@@ -24,15 +24,20 @@ animation: yourfirstanimation 3s forwards;
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-            {{- $currentPage := . -}}
-            {{ range .Site.Menus.main -}}
-                <li class='nav-item {{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}'>
-                    <a class="nav-link" href="{{ .URL }}"> {{ .Name }}</a>
+                        {{ range .Site.Params.Social }}
+                <li class="nav-item px-2 pt-1">
+                        <a class="footer-social px-2" {{ with .rel }} rel="{{ . }}" {{ end }} href="{{ .link }}" target="_blank"><i class="{{ .icon }}"></i></a>
                 </li>
-            {{ end }} 
-            <li class="nav-item px-2 pt-1">
-                <a class="btn fas fa-moon" id="dark-mode-toggle"></a>
-            </li>
+                        {{ end }}
+                <li class="nav-item " style="margin: 0.15em;">
+                    <a class="btn fas fa-moon" id="dark-mode-toggle"></a>
+                </li>
+                {{- $currentPage := . -}}
+                {{ range .Site.Menus.main -}}
+                    <li class='nav-item {{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}'>
+                        <a class="nav-link" href="{{ .URL }}"> {{ .Name }}</a>
+                    </li>
+                {{ end }} 
             </ul>
         </div>
     </div>

@@ -23,12 +23,6 @@ copyright = "Daniel Gallagher ©"
     icon = "fab fa-linkedin-in"
 
 
-[menu]
-  [[menu.main]]
-    name = "Grew-TSE"
-    url = "/grewtse/"
-    weight = 1
-
 [taxonomies]
   garden_tags = 'garden_tags'
   project_tags = 'project_tags'
