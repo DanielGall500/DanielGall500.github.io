@@ -1,7 +1,7 @@
 baseURL = "https://www.dg-nlp.com"
 languageCode = "en-ie"
-title = "DG-NLP"
-theme = "hugo-digital-garden-theme"
+title = "Daniel Gallagher"
+theme = "digital-garden"
 themesdir = "theme/"
 copyright = "Daniel Gallagher ©"
 
@@ -9,7 +9,7 @@ copyright = "Daniel Gallagher ©"
 [params]
   name = "Daniel Gallagher"
   description = "Natural Language Processing"
-  initials = "DG-NLP"
+  initials = "Daniel Gallagher"
   googleAnalytics = ""
 
   [[params.social]]
@@ -25,28 +25,14 @@ copyright = "Daniel Gallagher ©"
 
 [menu]
   [[menu.main]]
-    name = "Articles"
-    url = "/garden/"
+    name = "Grew-TSE"
+    url = "/grewtse/"
     weight = 1
-  [[menu.main]]
-    name = "Projects"
-    url = "/projects/"
-    weight = 2
-  [[menu.main]]
-    name = "About"
-    url = "/about/"
-    weight = 3
-  [[menu.main]]
-    name = "Resume"
-    url = "/resume/"
-    weight = 4
-
 
 [taxonomies]
   garden_tags = 'garden_tags'
   project_tags = 'project_tags'
   library_tags = 'library_tags'
-
 
 [markup]
   defaultMarkdownHandler = 'goldmark'

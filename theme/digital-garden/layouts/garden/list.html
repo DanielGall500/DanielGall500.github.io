@@ -1,0 +1,55 @@
+{{ define "main" }}
+
+<!-- Title and summary -->
+<div class="container">
+    <div class="py-5 rounded-3" style="justify-content: center;">
+        <div class="container-fluid py-2">
+            <h1 class="display-2 mb-4">{{ .Title }}</h1>
+            <p class="bio row-md-8 fs-4 serif">{{ .Summary }}</p>
+        </div>
+    </div>
+</div>
+
+<!-- Filter Buttons -->
+<div class="container mb-5">
+
+
+    <!--
+    <div class="btn-toolbar mb-2 bio" role="toolbar" aria-label="Toolbar with button groups">
+        <i class="fas fa-filter"></i>
+        <div id="filters" class="button-group">
+            {{ range $name, $taxonomy := .Site.Taxonomies.garden_tags }}
+            {{ $btnid := $name | printf ".js-iso-%s"}}
+            <input type="checkbox" class="btn-check" id="{{ $btnid }}" autocomplete="off" data-filter="{{ $btnid }}">
+            <label class="button" for="{{ $btnid }}">{{ $name }}</label>  
+            {{ end }}
+        </div>
+    </div>
+    -->
+
+    <!-- Single checkbox option -->
+    <!-- Please switch comment in isotope.js for this to work -->
+     <!--
+
+    <div class="btn-toolbar mb-2 bio" role="toolbar" aria-label="Toolbar with button groups">
+        <div id="filters" class="button-group">
+            <button class="button is-checked" data-filter="*">All</button>
+            {{ range $name, $taxonomy := .Site.Taxonomies.garden_tags }}
+            {{ $btnid := $name | printf ".js-iso-%s"}}
+            <button class="button" data-filter="{{ $btnid }}">{{ $name }}</button>
+            {{ end }}
+        </div>
+    </div> 
+-->
+
+</div>
+
+<div class="container">
+    <div class="row row-cols-1 g-4 mb-5">
+        {{ range ( where site.RegularPages "Section" "garden" | first 6 ) }}
+        {{ partial "home_garden.html" . }}
+        {{ end }}
+    </div>
+</div>
+
+{{ end }}
