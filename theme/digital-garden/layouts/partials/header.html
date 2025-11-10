@@ -23,7 +23,7 @@ animation: yourfirstanimation 3s forwards;
                         {{ end }}
                     </a>
                     <div class="navbar" id="navbarNavDropdown">
-                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0" style="flex-direction: row;">
                             {{ range .Site.Params.Social }}
                                 <li class="nav-item px-2 pt-1">
                                         <a class="footer-social px-2" {{ with .rel }} rel="{{ . }}" {{ end }} href="{{ .link }}" target="_blank"><i class="{{ .icon }}"></i></a>
