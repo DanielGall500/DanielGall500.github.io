@@ -13,6 +13,11 @@ copyright = "Daniel Gallagher ©"
   googleAnalytics = ""
 
   [[params.social]]
+    name = "Google Scholar"
+    link = "https://scholar.google.com/citations?user=X10pMzAAAAAJ"
+    icon = "fab fa-google"
+
+  [[params.social]]
     name = "Github"
     link = "https://github.com/DanielGall500/"
     icon = "fab fa-github"

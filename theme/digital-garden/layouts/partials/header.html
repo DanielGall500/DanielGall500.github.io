@@ -29,11 +29,9 @@ animation: yourfirstanimation 3s forwards;
                                         <a class="footer-social px-2" {{ with .rel }} rel="{{ . }}" {{ end }} href="{{ .link }}" target="_blank"><i class="{{ .icon }}"></i></a>
                                 </li>
                             {{ end }}
-                            <!--
                             <li class="nav-item " style="margin: 0.15em;">
                                 <a class="btn fas fa-moon" id="dark-mode-toggle"></a>
                             </li>
-                            -->
                             {{- $currentPage := . -}}
                             {{ range .Site.Menus.main -}}
                                 <li class='nav-item {{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}'>
