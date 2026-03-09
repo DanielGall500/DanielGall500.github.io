@@ -1,0 +1,1 @@
+import{o as e,e as o,i as s}from"./modules/vue-CVLCRBkq.js";import{u as r}from"./slidev/context-CqtjuH9W.js";const a={class:"absolute bottom-8 left-14 right-0 text-left text-sm text-gray-500"},i={__name:"Cite",setup(l){return r(),(t,n)=>(e(),o("div",a,[s(t.$slots,"default")]))}};export{i as _};
