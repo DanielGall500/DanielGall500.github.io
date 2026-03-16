@@ -1,0 +1,1 @@
+import{o as s,e as t,g as o,i as c}from"./modules/vue-gfpo6N34.js";import{_ as r}from"./index-lvX2EXd-.js";const f="/slides/grew-tse/assets/arxiv-logo-TGWB3m30.jpg",a={},n={class:"slidev-layout center h-full grid place-content-center"},l={class:"my-auto"};function _(e,i){return s(),t("div",n,[o("div",l,[c(e.$slots,"default")])])}const p=r(a,[["render",_]]);export{p as I,f as _};
